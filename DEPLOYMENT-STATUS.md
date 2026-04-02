@@ -94,14 +94,7 @@ Platforms: discord, slack, telegram, signal, openclaw
 
 ## Repository Status
 
-### Private (Glasik-Workspace)
-- ✅ All implementation code committed
-- ✅ Integration documentation
-- ✅ Deployment manifests
-- ✅ Shannon methodology validated
-- ✅ Header-based metadata (X-GNI-*)
-
-### Public (glasik-notation)
+### Public Repository (glasik-notation)
 - ✅ Complete README with quick start
 - ✅ Full benchmarks and methodology
 - ✅ Architecture strategy document
@@ -155,12 +148,12 @@ Platforms: discord, slack, telegram, signal, openclaw
 
 ---
 
-## Team Notes
+## Design Philosophy
 
-- **Architecture:** Open science (research public), closed operations (code private)
-- **Credibility:** Published honest benchmarks including where we lose to brotli
-- **Competitive advantage:** Not the algorithm (copable), but understanding of OpenClaw message patterns
-- **Portfolio value:** Complete end-to-end system (theory → implementation → deployment → operations)
+- **Open Science:** All research, benchmarks, and methodology published
+- **Credibility:** Honest assessment including competitive analysis (where we win, where we lose)
+- **Competitive Advantage:** Domain-specific optimization for message patterns
+- **Reproducible:** Full methodology documented for independent verification
 
 ---
 
