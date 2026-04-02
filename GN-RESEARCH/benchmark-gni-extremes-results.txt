@@ -1,0 +1,189 @@
+
+════════════════════════════════════════════════════════════════════════════════
+🚀 GNI V2: EXTREME BENCHMARK SUITE
+════════════════════════════════════════════════════════════════════════════════
+
+
+### PART 1: WORST CASE - FULLY ENTROPIC DATA ###
+
+
+════════════════════════════════════════════════════════════════════════════════
+🧪 TEST: Random 50KB
+   Fully entropic data (cryptographic randomness) - worst case for compression
+   Original size: 66.67 KB
+════════════════════════════════════════════════════════════════════════════════
+
+⏱️  GNI v2...
+   ✅ Ratio: 1.14×
+   ✅ Size: 66.67 KB → 58.61 KB
+   ✅ Saved: 8.06 KB (12.1%)
+   ✅ Time: 54ms
+   ✅ Context: code
+
+⏱️  gzip...
+   ✅ Ratio: 1.33×
+   ✅ Size: 50.25 KB
+   ✅ Saved: 16.41 KB
+   ✅ Time: 2ms
+
+⏱️  brotli...
+   ✅ Ratio: 1.33×
+   ✅ Size: 50.14 KB
+   ✅ Saved: 16.53 KB
+   ✅ Time: 36ms
+
+📊 COMPARISON:
+   ❌ GNI v2 vs gzip: -14.3%
+   ❌ GNI v2 vs brotli: -14.4%
+
+════════════════════════════════════════════════════════════════════════════════
+🧪 TEST: Random 100KB
+   Larger random dataset
+   Original size: 133.34 KB
+════════════════════════════════════════════════════════════════════════════════
+
+⏱️  GNI v2...
+   ✅ Ratio: 1.10×
+   ✅ Size: 133.34 KB → 121.09 KB
+   ✅ Saved: 12.24 KB (9.2%)
+   ✅ Time: 61ms
+   ✅ Context: text
+
+⏱️  gzip...
+   ✅ Ratio: 1.33×
+   ✅ Size: 100.46 KB
+   ✅ Saved: 32.87 KB
+   ✅ Time: 3ms
+
+⏱️  brotli...
+   ✅ Ratio: 1.33×
+   ✅ Size: 100.28 KB
+   ✅ Saved: 33.06 KB
+   ✅ Time: 73ms
+
+📊 COMPARISON:
+   ❌ GNI v2 vs gzip: -17.0%
+   ❌ GNI v2 vs brotli: -17.2%
+
+
+### PART 2: BEST CASE - REAL GBT SCAN RESULTS ###
+
+
+════════════════════════════════════════════════════════════════════════════════
+🧪 TEST: GBT Scans (100 hosts)
+   Real security scan results - structured, repetitive data
+   Original size: 230.42 KB
+════════════════════════════════════════════════════════════════════════════════
+
+⏱️  GNI v2...
+   ✅ Ratio: 911.00×
+   ✅ Size: 230.42 KB → 0.25 KB
+   ✅ Saved: 230.17 KB (99.9%)
+   ✅ Time: 33ms
+   ✅ Context: json
+
+⏱️  gzip...
+   ✅ Ratio: 33.21×
+   ✅ Size: 6.94 KB
+   ✅ Saved: 223.48 KB
+   ✅ Time: 2ms
+
+⏱️  brotli...
+   ✅ Ratio: 57.82×
+   ✅ Size: 3.99 KB
+   ✅ Saved: 226.43 KB
+   ✅ Time: 107ms
+
+📊 COMPARISON:
+   ✅ GNI v2 vs gzip: 2642.9%
+   ✅ GNI v2 vs brotli: 1475.7%
+
+════════════════════════════════════════════════════════════════════════════════
+🧪 TEST: GBT Scans (500 hosts)
+   Large scan dataset - tests scalability
+   Original size: 1154.74 KB
+════════════════════════════════════════════════════════════════════════════════
+
+⏱️  GNI v2...
+   ✅ Ratio: 1512.08×
+   ✅ Size: 1154.74 KB → 0.76 KB
+   ✅ Saved: 1153.97 KB (99.9%)
+   ✅ Time: 97ms
+   ✅ Context: json
+
+⏱️  gzip...
+   ✅ Ratio: 36.82×
+   ✅ Size: 31.36 KB
+   ✅ Saved: 1123.37 KB
+   ✅ Time: 5ms
+
+⏱️  brotli...
+   ✅ Ratio: 66.93×
+   ✅ Size: 17.25 KB
+   ✅ Saved: 1137.48 KB
+   ✅ Time: 601ms
+
+📊 COMPARISON:
+   ✅ GNI v2 vs gzip: 4006.8%
+   ✅ GNI v2 vs brotli: 2159.2%
+
+
+### PART 3: MIXED SCENARIOS ###
+
+
+════════════════════════════════════════════════════════════════════════════════
+🧪 TEST: Mixed (Random + Structured)
+   Hybrid: 50% random, 50% structured
+   Original size: 148.52 KB
+════════════════════════════════════════════════════════════════════════════════
+
+⏱️  GNI v2...
+   ✅ Ratio: 899.88×
+   ✅ Size: 148.52 KB → 0.17 KB
+   ✅ Saved: 148.35 KB (99.9%)
+   ✅ Time: 12ms
+   ✅ Context: json
+
+⏱️  gzip...
+   ✅ Ratio: 5.09×
+   ✅ Size: 29.16 KB
+   ✅ Saved: 119.36 KB
+   ✅ Time: 2ms
+
+⏱️  brotli...
+   ✅ Ratio: 5.42×
+   ✅ Size: 27.38 KB
+   ✅ Saved: 121.13 KB
+   ✅ Time: 72ms
+
+📊 COMPARISON:
+   ✅ GNI v2 vs gzip: 17568.0%
+   ✅ GNI v2 vs brotli: 16492.3%
+
+════════════════════════════════════════════════════════════════════════════════
+📊 EXTREME BENCHMARK SUMMARY
+════════════════════════════════════════════════════════════════════════════════
+
+Tests: 5
+GNI v2 beats gzip: 3/5
+GNI v2 beats brotli: 3/5
+
+Average Compression Ratios:
+  GNI v2:  665.04×
+  gzip:    15.56×
+  brotli:  26.57×
+
+GNI v2 vs gzip: 4175.1%
+GNI v2 vs brotli: 2403.4%
+
+════════════════════════════════════════════════════════════════════════════════
+KEY FINDINGS:
+════════════════════════════════════════════════════════════════════════════════
+
+🏆 Best compression: GBT Scans (500 hosts)
+   GNI v2: 1512.08×
+
+📉 Worst compression: Random 100KB
+   GNI v2: 1.10×
+
+════════════════════════════════════════════════════════════════════════════════

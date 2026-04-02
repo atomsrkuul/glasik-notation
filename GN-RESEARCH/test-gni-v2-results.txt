@@ -1,0 +1,51 @@
+
+════════════════════════════════════════════════════════════════════════════════
+🧪 GNI v2 CORRECT: Lossless Compression Test
+════════════════════════════════════════════════════════════════════════════════
+
+📝 Test: Simple text
+   Original size: 12 bytes
+   Compressed size: 20 bytes
+   Ratio: 0.60×
+   ✅ PASSED (lossless verified, SHA256 matched)
+
+📝 Test: Repeated pattern
+   Original size: 200 bytes
+   Compressed size: 16 bytes
+   Ratio: 12.50×
+   ✅ PASSED (lossless verified, SHA256 matched)
+
+📝 Test: JSON data
+   Original size: 31 bytes
+   Compressed size: 40 bytes
+   Ratio: 0.78×
+   ✅ PASSED (lossless verified, SHA256 matched)
+
+📝 Test: Large repeated
+   Original size: 10000 bytes
+   Compressed size: 125 bytes
+   Ratio: 80.00×
+   ❌ FAILED: Data mismatch! Original length: 10000, Decompressed length: 272
+
+📝 Test: Mixed content
+   Original size: 27 bytes
+   Compressed size: 34 bytes
+   Ratio: 0.79×
+   ✅ PASSED (lossless verified, SHA256 matched)
+
+════════════════════════════════════════════════════════════════════════════════
+📊 Compression Comparison
+════════════════════════════════════════════════════════════════════════════════
+
+Data size: 7.71 KB
+✅ GNI v2: 583 bytes, 13.55×
+📦 gzip: 591 bytes, 13.37×
+📦 brotli: 333 bytes, 23.72×
+
+════════════════════════════════════════════════════════════════════════════════
+📊 Summary
+════════════════════════════════════════════════════════════════════════════════
+Tests passed: 4/5
+Tests failed: 1/5
+
+❌ FAILURES DETECTED
