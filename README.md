@@ -44,19 +44,22 @@ A custom dictionary targeting these patterns cuts compression time and improves 
 
 ### Installation
 
+**From npm (recommended):**
 ```bash
-# Clone the repository
+npm install gni-compression
+```
+
+**Or clone the repository:**
+```bash
 git clone https://github.com/atomsrkuul/glasik-notation.git
 cd glasik-notation
-
-# Install dependencies
 npm install
 ```
 
 ### Compress a Message
 
 ```javascript
-const GNI = require('./implementations/src/gn-v3-adaptive.js');
+const GNI = require('gni-compression');
 const gni = new GNI();
 
 const message = "user: Hello! Check the Discord for updates.";
@@ -82,7 +85,7 @@ console.assert(decompressed === message, 'Lossless!');
 
 ```javascript
 // Automatic compression in a message handler
-const GNITransmissionLayer = require('./implementations/src/gn-transmission-layer.js');
+const GNITransmissionLayer = require('gni-compression/implementations/src/gn-transmission-layer.js');
 const gniLayer = new GNITransmissionLayer();
 
 // Before sending

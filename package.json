@@ -1,0 +1,36 @@
+{
+  "name": "gni-compression",
+  "version": "1.0.0",
+  "description": "Domain-specific message compression: 3.1× ratio on Discord/Slack/Telegram, 22-36% better than gzip",
+  "main": "implementations/src/gn-v3-adaptive.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atomsrkuul/glasik-notation.git"
+  },
+  "keywords": [
+    "compression",
+    "lz77",
+    "deflate",
+    "messaging",
+    "discord",
+    "slack",
+    "telegram",
+    "openclaw",
+    "bandwidth",
+    "storage"
+  ],
+  "author": "Glasik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atomsrkuul/glasik-notation/issues"
+  },
+  "homepage": "https://github.com/atomsrkuul/glasik-notation#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "implementations/src/",
+    "README.md",
+    "LICENSE"
+  ]
+}
