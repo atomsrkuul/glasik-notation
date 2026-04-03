@@ -300,7 +300,7 @@ Annual savings:      $30,168
    - Set up CI/CD workflows
 
 2. **GN v0.7** (Next phase)
-   - Quantum Error Correction for hallucinations
+   
    - Handle semantic drift in decompression
    - Support 50k+ token contexts
 

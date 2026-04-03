@@ -620,7 +620,7 @@ class GNContinuousRouter {
 
 ### Future Enhancements
 
-- [ ] **GN v0.7 - Quantum Error Correction**
+
   - Handle LLM hallucinations in decompression
   - Auto-detect semantic drift
   - Target: 50k+ token contexts
