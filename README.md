@@ -18,7 +18,7 @@
 - gzip baseline on same data: 1.9-2.8x
 - Phase 2 targets: 4-26x depending on corpus
 
-**Key insight:** GN v3.0 **matches gzip on dialogue** (semantic diversity) but **beats it on technical text** (high repetition). Honest metrics, not hype.
+**Key insight:** Phase 1 delivers lossless serialization + versioned framing. Compression ratios are a Phase 2 deliverable. Semantic tokenization is currently stubbed.
 
 ---
 
