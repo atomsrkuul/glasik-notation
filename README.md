@@ -8,7 +8,7 @@
 
 ---
 
-## Real Benchmarks (2,000+ Messages, 100% Verified)
+## Phase 1 Baseline (Honest Results)
 
 **ShareGPT V3 Corpus** (1,000 messages):
 - Original: 562 KB → Compressed: 127 KB
@@ -88,7 +88,7 @@ Layer 2: Compression (zlib optional)
   └─ Standard proven algorithm (not custom)
   └─ Transparent fallback (if no gain, skip it)
   └─ Output: compressed bytes or passthrough
-  └─ Status: WORKING (real benchmarks: 4.42–20.61×)
+  └─ Status: WORKING (lossless verified, compression ratios are Phase 2)
 
 Layer 3: Framing (CRC32 integrity)
   └─ Versioned magic bytes (allows Phase 2 extensions)
