@@ -11,12 +11,12 @@
 ## Phase 1 Baseline (Honest Results)
 
 **ShareGPT V3 Corpus** (1,000 messages):
-- Original: 562 KB → Compressed: 127 KB
-- **Ratio: 4.42×** | Recovery: 100% ✓
+- Lossless recovery: 100% verified
+- Phase 1 compression: ~1.0x (tokenizer stub, no dictionary yet)
 
 **Ubuntu IRC Corpus** (1,000 messages):
-- Original: 489 KB → Compressed: 24 KB
-- **Ratio: 20.61×** | Recovery: 100% ✓
+- gzip baseline on same data: 1.9-2.8x
+- Phase 2 targets: 4-26x depending on corpus
 
 **Key insight:** GN v3.0 **matches gzip on dialogue** (semantic diversity) but **beats it on technical text** (high repetition). Honest metrics, not hype.
 
